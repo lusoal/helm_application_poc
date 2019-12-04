@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  default-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2019-12-04T16:55:56.085898431-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 17159fbca0b2404f7faa7ca3ffb33a9898069e0720e6c1b52a6df72f3716cd2c
+    name: default-app
+    type: application
+    urls:
+    - https://lusoal.github.io/helm_application_poc/default-app/default-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2019-12-04T16:55:56.084415495-03:00"
