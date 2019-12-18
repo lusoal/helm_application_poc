@@ -9,7 +9,7 @@ imagePullSecrets: []
 #Name overrride will be RELEASE-NAME-$nameOverride
 nameOverride: ""
 #Full name overrride will be $fullnameOverride
-fullnameOverride: "application-test"
+fullnameOverride: "application-test-2"
 
 replicaCount: 1
 
