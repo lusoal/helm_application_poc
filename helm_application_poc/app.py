@@ -23,6 +23,24 @@ def index():
     dict_resturn = {"message" : "hello"}
     return jsonify(dict_resturn)
 
+@app.route('/envVars', methods=['GET'])
+def envVars():
+    env_vars = os.popen("env").read()
+    env_vars_list = env_vars.split("\n")
+
+    env_dict = { "environment" : [] }
+
+    for env in env_vars_list:
+        try:
+            temp_dict = {}
+            env_key_value = env.split("=")
+            temp_dict["Key"] = env_key_value[0]
+            temp_dict["Value"] = env_key_value[1]
+            env_dict["environment"].append(temp_dict)
+        except:
+            continue
+
+    return jsonify(env_dict)
 
 @app.route('/health', methods=['GET'])
 def health():
