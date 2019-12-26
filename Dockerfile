@@ -6,8 +6,7 @@ WORKDIR /app
 
 EXPOSE 5000
 
-ENTRYPOINT ["python"]
-CMD ["helm_application_poc.py"]
+ENTRYPOINT ["/app/entrypoint.sh"]
 
 
 
